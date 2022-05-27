@@ -1,0 +1,63 @@
+id: I8387FC23
+source: https://www2.hf.uio.no/polyglotta/index.php?page=library&bid=2
+source_file: null
+initial_creation_type: input
+imported: '2022-05-27T17:15:09.446312'
+last_modified: '2022-05-27T17:15:09.446419'
+parser: null
+source_metadata:
+  title: 'MSV 1,05: Carmavastu'
+  language: sa
+  base:
+    fFFD1:
+      title: Carmavastūddāna
+      base_file: fFFD1.txt
+      order: 1
+    f8E84:
+      title: Koṭikarṇa, born with a golden ring in his ear, visits the Preta world
+      base_file: f8E84.txt
+      order: 2
+    f0D57:
+      title: Why Koṭikarṇa was born with a golden ear-ring
+      base_file: f0D57.txt
+      order: 3
+    f1229:
+      title: Why Koṭikarṇa visits Hell
+      base_file: f1229.txt
+      order: 4
+    f50FD:
+      title: Various rules
+      base_file: f50FD.txt
+      order: 5
+    f7322:
+      title: Rājagṛhanidāna
+      base_file: f7322.txt
+      order: 6
+    f12D5:
+      title: Uddāna
+      base_file: f12D5.txt
+      order: 7
+    fF35E:
+      title: Vaiśālyānidāna
+      base_file: fF35E.txt
+      order: 8
+    f30C6:
+      title: Śrāvastyānidāna
+      base_file: f30C6.txt
+      order: 9
+    f1ACF:
+      title: Uddāna
+      base_file: f1ACF.txt
+      order: 10
+    f8F50:
+      title: Śrāvastyānidāna
+      base_file: f8F50.txt
+      order: 11
+  chapter_to_tile: {}
+statistics: {}
+quality: {}
+copyright:
+  status: Unknown
+  notice: ''
+  info_url: null
+license: null

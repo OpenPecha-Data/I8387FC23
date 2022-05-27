@@ -1,0 +1,480 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Bibliotheca Polyglotta</title>
+<link rel='stylesheet' type='text/css' href='css/bp.css'>
+<link rel='stylesheet' type='text/css' href='css/diac_doc.css'>
+
+<link rel='stylesheet' type='text/css' href='css/imageGallery.css'>
+<link rel='stylesheet' type='text/css' href='css/ss.css'>
+	      <link rel='stylesheet' type='text/css' href='css/tree_menu.css'>
+<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+<!--  <script type="text/javascript" src="js/jqModal.js"></script>-->
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/tree_menu.js"></script>
+<!-- <script src="js/analytics_tracking.js" type="text/javascript"></script> -->
+
+
+<!-- <script type="text/javascript" src="js/popupDivhandling.js"></script> -->
+<!--  <script type="text/javascript" src="jquery-latest.js"></script>
+<script type="text/javascript" src="js/jquery-imagegallery.js"></script>-->
+</head>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//vrtx.uio.no/js/analytics/v2/analytics.js','ga');
+
+ga('create', 'UA-86407471-1', 'auto');
+ga(function(tracker) {
+
+	// Modifies sendHitTask to hit ipproxy instead of http://www.google-analytics.com directly
+	tracker.set('sendHitTask', function(model) {
+		payload = model.get('hitPayload');
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', '//w3prod-ipproxy.uio.no/collect' +'?' + payload, true);
+		xhr.send();
+	});
+		ga('send', 'pageview');
+});
+</script>
+<body><div class='banner'></div><!-- banner --><div class='uiologo'>
+<a href='http://www.hf.uio.no/'><img src='https://www2.hf.uio.no/polyglotta/hfe.png' border='0'></a></div><!-- uiologo --><div class='clear'></div>
+<div class='smule_tittel'>
+<div class='brodsmuleboks'>You are here: <a href='/polyglotta/index.php' accesskey='1'> BP HOME</a> >  <a href='/polyglotta/index.php?page=library&amp;bid=2' accesskey='1'>TLB</a> > <a href='/polyglotta/index.php
+	?page=volume&amp;vid=430' accesskey='1'>MSV 1,05: Carmavastu</a> > fulltext</div><div class='clear'></div>
+<div class='headline'>MSV 1,05: Carmavastu<div class='clear'></div></div><!-- headline -->
+</div><!-- smule_tittel -->
+<!--<div>-->
+
+<h2 class="trigger" id="tr_lang"><a  href="#">Choose languages</a></h2>
+<h2 class="trigger" id="tr_img"><a  href="#">Choose images, etc.</a></h2>
+
+
+<div id="toggle_container_lan">
+
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_lan.php" method="POST">
+
+<div style="float:left; width:auto; text-align:left; margin-left:20px;">
+<h5>Choose languages</h5>
+<ul>
+<input value="Choose all" type="button" onClick="markAll('tr')"><input value="Uncheck all" type="button" onClick="markNone('tr')">
+
+	<li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_430[2993]" value="2993" id="lancheckbox" checked >Sanskrit: GBM IV p.</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_430[2992]" value="2992" id="lancheckbox" checked >Tibetan: Kj D ’dul ba ka</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_430[2994]" value="2994" id="lancheckbox" checked >Chinese: Chi T 1447, 義淨 Yijing</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_430[2995]" value="2995" id="lancheckbox" checked >Tibetan: Comments</label></li><div style="clear:both"></div>
+<input type='submit' name='set_cookie' value='Save view'>
+<div style="clear:both"></div>
+
+</ul>
+<input type="hidden" name="vid" value="430">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+</div>
+
+<div id="toggle_container_img">
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_img.php" method="POST">
+
+<div style="float:left; width:auto; text-align: left;">
+<h5>Choose display</h5>
+<ul>
+		
+	<li> 
+		<input type='checkbox' name='bilder' checked="checked" > Enable images
+	</li>
+	<li> 
+	<input type='checkbox' onclick="onOffCheckbox();" name='fotnoter' checked="checked"> Enable footnotes
+	<div id="pff" style="display:block" >
+	<ul>
+	<li><input type='radio' name='fotnote_valg'  value='show_a' checked> Show all footnotes</li>
+	<li><input type='radio' name='fotnote_valg'  value='show_h'  > Minimize footnotes</li>
+	</ul>
+	</li>
+	
+	</div>
+	<div style="float:left; width:20em; text-align: left; margin-left:120px ">
+	<div style="clear:both"></div>
+	<input type='submit' name='set_cookie' value='Save view'>
+	<div style="clear:both"></div>
+	</div>
+	
+</ul>
+<input type="hidden" name="vid" value="430">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+	
+
+
+
+</div>
+</div>
+
+<div class='sok'><form name='Sok' id='FormBlock' action='/polyglotta/index.php' method='get'>
+<input type='hidden' name='page' value='search'>
+<input type='hidden' name='bid' value='2'>
+<input type='hidden' name='vid' value='430'>
+<div class='sokeboks'>
+<input name='sokefelt' id='sokeboks' type='text' size='30' value=''>
+<input type='submit' name='Sok' value='Search' id='nsubmit'>
+<div class='clear'></div><a class="diacbutton" id="diacbutton" href="#">Diacritica</a><a id="diac2button" class="diac2button"  href="#">Diacritica-help</a><a class="s2button" href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation:SearchHelp">Search-help</a><div class='diacritical' id='diacritical_sign'><div style="text-align: left; ">
+<table class = 'diacritica' width="200" border="1" cellpadding="1" cellspacing="1" id="diacritical">
+    <tbody>
+        <tr>
+            <td style="text-align: center; ">ā</td>
+            <td style="text-align: center; ">ī</td>
+            <td style="text-align: center; ">ū</td>
+            <td style="text-align: center; ">ṛ</td>
+            <td style="text-align: center; ">ṝ</td>
+            <td style="text-align: center; ">ḷ</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ḹ</td>
+            <td style="text-align: center; ">&rsquo;</td>
+            <td style="text-align: center; ">ṃ</td>
+            <td style="text-align: center; ">ḥ</td>
+            <td style="text-align: center; ">ṅ</td>
+            <td style="text-align: center; ">&ntilde;</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ṭ</td>
+            <td style="text-align: center; ">ḍ</td>
+            <td style="text-align: center; ">ṇ</td>
+            <td style="text-align: center; ">ṣ</td>
+            <td style="text-align: center; ">ś</td>
+            <td style="text-align: center; ">ź</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">&scaron;</td>
+            <td style="text-align: center; ">č</td>
+            <td style="text-align: center; ">ǰ</td>
+            <td style="text-align: center; ">&gamma;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+</div></div><!-- diacritical --><div id="ex3a" class="jqmDialog"><div>
+	<span style="font-size:12px;">Note on the transliteration:</span></div>
+<div>
+	<span style="font-size:12px;">The transliteration system of the BP/TLB is based on the Unicode/UTF-8 system. However, there may be difficulties with some of the letters &ndash; particularly on PC/Windows-based systems, but not so much on the Mac. We have chosen the most accepted older and traditional systems of transliteration against, e.g, Wylie for Tibetan, since with Unicode it is possible, in Sanskrit and Tibetan, etc., to represent one sound with one letter in almost all the cases (excepting Sanskrit and Tibetan aspirated letters, and Tibetan tsa, tsha, dza). We thus do not use the Wylie system which widely employs two letters for one sound (ng, ny, sh, zh etc.).</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">Important:</span></div>
+<div>
+	<span style="font-size:12px;">We ask you in particular to note the use of the &rsquo; apostrophe and not the &#39; representing the avagrāha in Sanskrit, and most important the &rsquo;a-chuṅ in Tibetan. On the Mac the &rsquo; is Alt-M.</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">If you cannot find the letters on your key-board, you may click on the link &quot;Diacritica&quot; to access it for your search.</span></div>
+</div><!-- diacritical_doc --><div class='clear'></div><select name='searchmode'><option selected value='phrase'>Search for exact phrase</option>
+<option  value='phraseregex'>Search for exact phrase (regex)</option>
+<option  value='word'>Search for every word in one record</option>
+<option  value='free'>Search for every word fragment in one record</option>
+</select>
+<select name='context'>
+<option ($_GET[context]=="a" ? "selected" : "") value="a"> Search in all libraries</option><option selected value="bTLB">Search in TLB</option><option selected value="v430">Search in MSV 1,05: Carmavastu</option></select><div class='clear'></div><a class='sbutton' href='/polyglotta/index.php?page=asearch&amp;bid=2&amp;vid=430'>Choose specific texts..</a><div class='clear'></div></div></form></div><!-- sok --><div class='clear'></div><!-- clear --><div id='dcr' class='divControlRead'><div class='venstrefulltekstfelt'><div class='bverknavn'><a href='/polyglotta/index.php?page=volume&amp;vid=430'>MSV 1,05: Carmavastu</a></div><table class="tlvl2">
+					<tr>
+						<td bgcolor="#ffffff"> &nbsp; &nbsp;
+						<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_7627.Verses41-58" border=0 hspace=2>
+						<a href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=430" class="ajax_tree0">Complete text</a>
+						</td>
+					</tr>
+				  </table><input type="hidden" name="tree_top_options" id="tree_top_options" value="43168.Carmavastūddāna|43169.Koṭikarṇa,bornwithagoldenringinhisear,visitsthePretaworld|43170.WhyKoṭikarṇawasbornwithagoldenear-ring|43171.WhyKoṭikarṇavisitsHell|43172.Variousrules|43173.Rājagṛhanidāna|43174.Uddāna|43175.Vaiśālyānidāna|43176.Śrāvastyānidāna|43177.Uddāna|43178.Śrāvastyānidāna|">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_43168.Carmavastūddāna" border=0 hspace=2><a id="href_43168.Carmavastūddāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=430&mid=698114&level=1&cid=394757" class="ajax_tree0">Carmavastūddāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_43169.Koṭikarṇa,bornwithagoldenringinhisear,visitsthePretaworld" border=0 hspace=2><a id="href_43169.Koṭikarṇa,bornwithagoldenringinhisear,visitsthePretaworld" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=430&mid=698116&level=1&cid=394759" class="ajax_tree0">Koṭikarṇa, born with a golden ring in his ear, visits the Preta world
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_43170.WhyKoṭikarṇawasbornwithagoldenear-ring" border=0 hspace=2><a id="href_43170.WhyKoṭikarṇawasbornwithagoldenear-ring" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=430&mid=698324&level=1&cid=394965" class="ajax_tree0">Why Koṭikarṇa was born with a golden ear-ring
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_43171.WhyKoṭikarṇavisitsHell" border=0 hspace=2><a id="href_43171.WhyKoṭikarṇavisitsHell" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=430&mid=698348&level=1&cid=394988" class="ajax_tree0">Why Koṭikarṇa visits Hell
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_43172.Variousrules" border=0 hspace=2><a id="href_43172.Variousrules" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=430&mid=698351&level=1&cid=394990" class="ajax_tree0">Various rules
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_43173.Rājagṛhanidāna" border=0 hspace=2><a id="href_43173.Rājagṛhanidāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=430&mid=698380&level=1&cid=395019" class="ajax_tree0">Rājagṛhanidāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_43174.Uddāna" border=0 hspace=2><a id="href_43174.Uddāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=430&mid=698419&level=1&cid=395053" class="ajax_tree0">Uddāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_43175.Vaiśālyānidāna" border=0 hspace=2><a id="href_43175.Vaiśālyānidāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=430&mid=698462&level=1&cid=395096" class="ajax_tree0">Vaiśālyānidāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_43176.Śrāvastyānidāna" border=0 hspace=2><a id="href_43176.Śrāvastyānidāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=430&mid=698469&level=1&cid=395103" class="ajax_tree0">Śrāvastyānidāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_43177.Uddāna" border=0 hspace=2><a id="href_43177.Uddāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=430&mid=698479&level=1&cid=395113" class="ajax_tree0">Uddāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_43178.Śrāvastyānidāna" border=0 hspace=2><a id="href_43178.Śrāvastyānidāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=430&mid=698480&level=1&cid=395114" class="ajax_tree0">Śrāvastyānidāna
+</td></tr></table>
+<script language=javascript>test('43178.Śrāvastyānidāna|')</script><div class='bverknavn'><a href='/polyglotta/index.php?page=library&amp;bid=2'>Back to library</a></div></div><!-- venstrefulltekstfelt --><div class="clear"></div><!-- clear --><div id="nav-menu"><ul>
+  		  <li  id="nav-1"><a class="tabValgt" href="/polyglotta/index.php?page=record&amp;view=record&amp;vid=430&amp;mid=698480&amp;level=1">Sentence by sentence view</a></li>
+  		  <li  id="nav-2"><a  href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=430&amp;cid=395114&amp;mid=698480&amp;level=1">Continuous text view</a></li>
+ 		<li  id="nav-3"><a  href="/polyglotta/admin/index.php?page=fulltext&amp;view=fulltext&amp;vid=430&amp;cid=395114&amp;mid=698480&amp;level=1">View in admin</a></li>
+
+  		  </ul></div><div class='clear'></div><!-- clear -->			<script language="javascript" type="text/javascript">
+			var kilderef = '';
+			var tekstid = 0;
+			var tekstid_bilder = 0;
+			var filsti = '';
+			var thumbnail = '';
+			</script>
+		<div class='infofulltekstfelt'><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><div class='kilderef' id='3214324'></div><div class='clear'></div><span id='3214324bi' class='paragraph'>
+							śravastyāṃ nidānam* | <br />bhikṣūṇāṃ navena tṛṇena pādāḥ śūlitāḥ | brāhmaṇagṛhapatayaḥ kathayanti |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><div class='kilderef' id='3213926'></div><div class='clear'></div><span id='3213926bi' class='paragraph'>
+							gleṅ gźi ni mñan yod na’o || <br />dge sloṅ (5) rnams rtswa’i myu gus rkaṅ pa rma byuṅ ba dag bram ze daṅ khyim bdag rnams kyis mthoṅ nas smras pa |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><div class='kilderef' id='3214722'></div><div class='clear'></div><span id='3214722bi' class='paragraph'>
+							(7)縁在室羅筏城。時屬霖雨。諸苾芻等著青草(8)鞋。便往乞食。苾芻脚上。悉生疿子如芥子顆。(9)時婆羅門居士等皆問。&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><div class='kilderef' id='3215120'></div><div class='clear'></div><span id='3215120bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3214325bi' class='paragraph'>
+							kena yuṣmākaṃ pādāḥ śūlitāḥ | navena tṛṇena |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3213927bi' class='paragraph'>
+							’phags pa dag khyed cag gi źabs ci źig gis rma byuṅ | rtsa’i myu gus so ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3214723bi' class='paragraph'>
+							聖者。何故脚上如是(10)瘡耶。答曰。由其草鞋。遂令如此。&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3215121bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3214326bi' class='paragraph'>
+							yūyaṃ nālāmbujaṃ kiṃ na dhārayata | nānujñātaṃ bhagavatā | etat prakaraṇaṃ bhikṣavo bhagavata ārocayanti |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3213928bi' class='paragraph'>
+							ci khyed cag gis lham mgul chad ma bcaṅs sam | bcom ldan ’das kyis (6) rjes su ma gnaṅ ṅo źes bya ba’i skabs de bcom ldan ’das la dge sloṅ rnams kyis gsol pa daṅ |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3214724bi' class='paragraph'>
+							時婆羅門等 (11)白言。聖者。何爲不著&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3215122bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3214327bi' class='paragraph'>
+							bhagavān āha | nālāmbujā ' dhārayitavyāḥ |&nbsp;</span><span id='3214328bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3213929bi' class='paragraph'>
+							bcom ldan ’das kyis bka’ stsal pa | de lta bas na rjes su gnaṅ ste | lham mgul chad bcaṅ bar bya’o ||&nbsp;</span><span id='3213930bi' class='paragraph'>
+						 gaṅ gi tshe rtswa’i myu gu dag cher skyes pa de’i tshe dge sloṅ (7) rnams kyi rkaṅ bde bas kyaṅ rma cher byuṅ ba bram ze daṅ khyim bdag rnams kyis mthoṅ nas smras pa | khyed cag gi źabs ci źig gis rma byuṅ | de rnams kyis smras pa | rtswa’i myu gu dag cher skyes pas bdag cag gi rkaṅ pa de bas kyaṅ rma cher byuṅ ṅo || ’phags pa rnams ci (276b1) khyed cag gis lham yu’u thuṅ ma bcaṅs sam | bcom ldan ’das kyis rjes su ma gnaṅ ṅo źes pa’i skabs de bcom ldan ’das la dge sloṅ rnams kyis gsol pa daṅ |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3214725bi' class='paragraph'>
+							世尊集苾芻。告言。從今已後。聽諸苾芻著(13)&nbsp;</span><span id='3214726bi' class='paragraph'>
+						 時室羅筏城。於街衢生草長盛。苾芻(14)行時。脚踝被瘡。婆羅門居士等。乃至&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3215123bi' class='paragraph'>
+							.&nbsp;</span><span id='3215124bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3214329bi' class='paragraph'>
+							evaṃ vṛddhe tṛṇe muṇḍapūlā dhārayitavyāḥ | pūlā haimavateṣu ca iti |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3213931bi' class='paragraph'>
+							bcom ldan ’das gyis bka’ stsal pa | de lta bas na rjes su gnaṅ ste | lham yu’u thuṅ bcaṅ bar (2) bya’o||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3214727bi' class='paragraph'>
+							佛言。聽(15)著靴鞋。&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3215125bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3214330bi' class='paragraph'>
+							yadā virūḍhakena mohapuruṣeṇa kāpilavāstavaḥ śākyāḥ praghātitāḥ tatra kecid uttarāpathaṃ gatāḥ kecid yāvan naivālaṃ praviṣṭāḥ |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3213932bi' class='paragraph'>
+							gaṅ gi tshe skyes bu gti mug ’phags skyes pos ser skyan gnas pa’i śākya rnams kha btag pa na | de dag las kha cig nub phyogs su dṅo bnas | kha cig bal yul gyi bar du doṅ ṅo ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3214728bi' class='paragraph'>
+							惡生太子以迷癡故。殺劫比羅城諸(16)釋種。時城中或有走向西者。或有投泥婆羅。(17)入泥婆羅者。皆是具壽阿難陀眷屬。&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3215126bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3214331bi' class='paragraph'>
+							śrāvastīyā vaṇijo naivālaṃ gatāḥ |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3213933bi' class='paragraph'>
+							mñan yod pa’i don mthun dag zoṅ thogs te bal yul du lhags pa daṅ |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3214729bi' class='paragraph'>
+							後室羅(18)筏城商人。持諸貨物。向泥婆羅。釋種見商人(19)已。問曰。&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3215127bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3214332bi' class='paragraph'>
+							tair vaṇijaḥ pṛṣṭāḥ |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3213934bi' class='paragraph'>
+							(3) de dag gis de rnams mthoṅ nas smras pa | śes ldan dam khyed cag gaṅ nas da ’dir lhags | de rnams kyis smras pa | mñan yod nas so || bdag cag gi gñen ’phags pa kun dga’ bo yod na lan ’ga’ yaṅ ’phags pa kun dga’ bo ’dir ’oṅs te bdag (4) cag la gtam ma dris so || de rnams kyis smras pa | bdag cag gi ’phags pa kun dga’ bo’i du soṅ la sbran par bgyi’o || de rnams kyis zoṅ rnams bsgyur ba’i zoṅ dag khyer te mñan yod du lhags nas de rnams kyis ’phags pa kun dga’ bo la smras pa | (5) ’phags pa kun dga’ bo khyod kyi gñen ba la yul na mchis te de dag khyod mthoṅ bar ’tshal lo ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3214730bi' class='paragraph'>
+							我今遭斯困苦逼。阿難陀聖者。豈不(20)來此看我等耶。時諸商人一心憶念。交易既 (21)了。還至室羅筏城。具報阿難陀。聖者眷屬在(22)泥婆羅。作如是言。聖者阿難陀。於諸商人。聞(23)是語已。情懷愴然。即往泥婆羅國。國極寒雪。(24)阿難陀手脚劈裂。迴還室羅筏城。諸苾芻見(25)已。問言。阿難陀。汝先手脚柔軟。猶如於舌。(26)因何如是劈裂。答言。泥婆羅國。地近雪山。由(27)風雪故。令我脚手如是。又問。汝之眷屬。於彼(28)云何存活。報言。彼著富羅。&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3215128bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3214333bi' class='paragraph'>
+							āryānando jñātivatsalo nāsmākam avalokayatīti | yāvat tais tasyārocitam* | sa naivālaṃ praviṣṭaḥ | tasya himena pādau sphuṭitau |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3213935bi' class='paragraph'>
+							tshe daṅ ldan pa kun dga’ bo ni gñen la gduṅ ba yin pas de gñen dag la blta ba’i phyir bal yul du soṅ ba las | de lhags pas lag pa daṅ rkaṅ pa ser ga byuṅ ba (6) daṅ |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3214731bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3215129bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3214334bi' class='paragraph'>
+							sa bhikṣubhir ucyate | tava pādau kimartham idānīm īdṛśau | himena |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3213936bi' class='paragraph'>
+							de la dge sloṅ rnams kyis smras pa | tshe daṅ ldan pa kun dga’ bo pad ma’i ’dab ma ral ba bźin du khyod kyi lag pa daṅ rkaṅ pa ci źig gis ser ga byuṅ bar gyur | des smras pa | lhags pas so ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3214732bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3215130bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3214335bi' class='paragraph'>
+							te tava jñātayaḥ kiṃ kurvanti | pūlāṃ dhārayanti |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3213937bi' class='paragraph'>
+							khyod kyi gñen dag ni lham sgro gu can bcaṅ bar bya’o ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3214733bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3215131bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3214336bi' class='paragraph'>
+							tvaṃ kimarthaṃ na dhārayasi |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3213938bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3214734bi' class='paragraph'>
+							又問。汝何故不(29)著。&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3215132bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3214337bi' class='paragraph'>
+							bhagavatā nānujñātam* | etat prakaraṇaṃ bhikṣavo bhagavata ārocayanti |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3213939bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3214735bi' class='paragraph'>
+							報言。佛未許著。時諸苾芻。以縁白佛。&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3215133bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3214338bi' class='paragraph'>
+							bhagavān āha | haimavateṣu janapadeṣu pūlā dhārayitavyāḥ |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3213940bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3214736bi' class='paragraph'>
+							佛(1057b1)言。有寒雪處應著富羅&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3215134bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3214339bi' class='paragraph'>
+							āyuṣmān upālī buddhaṃ bhagavantaṃ pṛcchati | yad uktaṃ bhadanta bhagavatā haimavateṣu janapadeṣu pūlā dhārayitavyā iti |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3213941bi' class='paragraph'>
+							(277a1) saṅs rgyas bcom ldan ’das la tshe daṅ ldan pa ñe ba ’khor gyis źus pa | btsun pa bcom ldan ’das kyis yul kha ba can rnams su lham sgro gu can bcaṅ bar bya’o źes gsuṅs pa gaṅ lags pa |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3214737bi' class='paragraph'>
+							時具壽鄔波離。白世 (2)尊曰。如佛所説。有雪寒處。應著富羅。&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3215135bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3214340bi' class='paragraph'>
+							katame haimavatā janapadāḥ | yatrodakasthālakaṃ śyāyati |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3213942bi' class='paragraph'>
+							btsun pa ji tsam gyis yul kha ba can du brjod par (2) bgyi|| ñe ba ’khor gaṅ na snod du chu ’khyag pa yin no ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3214738bi' class='paragraph'>
+							何者(3)是寒雪國。佛言。椀中盛水凍者。是寒雪處。&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3215136bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3214341bi' class='paragraph'>
+							bhikṣor lubdhako ’bhiprasannaḥ | tasya ṛkṣacarma saṃpannam* |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3213943bi' class='paragraph'>
+							dge sloṅ gźan źig la rṅon pa źig dad par gyur nas | rdon pa des dom lpags śig rñed pa dge sloṅ de la phul ba daṅ des ma blaṅs so ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3214739bi' class='paragraph'>
+							復(4)有一獵師。於苾芻處。深生淨信。是時獵師獲(5)一熊皮。&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3215137bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3214342bi' class='paragraph'>
+							sa bhikṣor anuprayacchati | sa na gṛhṇāti |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3213944bi' class='paragraph'>
+							des dge sloṅ de’i phyi bźin ’braṅ źiṅ smras pa | ’phags pa (3) bdag gis dom lpags rñed pa khyod la ’bul gyis bźes śig | dge sloṅ des ma blaṅs so ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3214740bi' class='paragraph'>
+							便將奉施。苾芻不取。&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3215138bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3214343bi' class='paragraph'>
+							bhagavāṃś ca taṃ pradeśam anuprāptaḥ |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3213945bi' class='paragraph'>
+							bcom ldan ’das kyaṅ phyogs der gśegs te |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3214741bi' class='paragraph'>
+							佛因到彼。&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3215139bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3214344bi' class='paragraph'>
+							jānakā pṛcchakā buddhā bhagavantaḥ | pṛcchati buddho bhagavān āyuṣmantam ānandam* |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3213946bi' class='paragraph'>
+							saṅs rgyas bcom ldan ’das rnams ni mkhyen bźin du rmed pa yin pas mkhyen bźin du rmed de | saṅs rgyas bcom ldan (4) ’das kyis tshe daṅ ldan pa kun dga’ bo la rmas pa |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3214742bi' class='paragraph'>
+							佛即(6)知而故問阿難陀曰。&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3215140bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3214345bi' class='paragraph'>
+							kim eṣa ānanda bhikṣor lubdhakaḥ pṛṣṭhataḥ ' pṛṣṭhataḥ samanubaddhaḥ | etat prakaraṇaṃ bhikṣavo bhagavata ārocayanti |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3213947bi' class='paragraph'>
+							kun dga’ bo dge sloṅ ’o ni’i phyi bźin du rbon pa pha bi ci ste ’braṅ | btsun pa rṅon pa des dom lpags śig rñed nas | des dge sloṅ ’o ni la stsal pa las | dge sloṅ gis de ma blaṅs pa daṅ rṅon pa de dge sloṅ ’o ni’i phyi bźin ’braṅ (5) źiṅ mchi’o ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3214743bi' class='paragraph'>
+							獵師何故隨逐苾芻而(7)行。阿難陀復問彼苾芻。知已以縁白佛。&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3215141bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3214346bi' class='paragraph'>
+							bhagavān āha | durlabhā ānanda lubdhakasya śraddhā | yadi śatasahasram api labhati sarvaṃ praghātayati |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3213948bi' class='paragraph'>
+							bcom ldan ’das kyis bka’ stsal pa | kun dga’ bo rṅon pa dad pa can ni dkon te | gal te brgya’am stoṅ źig daṅ phrad na thams cad gsod pa yin pas |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3214744bi' class='paragraph'>
+							佛言。(8)希有獵師。發清信心。縱令千種教化。終不肯(9)息殺生之業。&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3215142bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3214347bi' class='paragraph'>
+							tasmād yadi lubdhako rikṣacarmānuprayacchati ' grahītavyam* |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3213949bi' class='paragraph'>
+							de bas na gal te rṅon pas dom lpags byin na blaṅ bar bya’o ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3214745bi' class='paragraph'>
+							是故聽受熊皮。&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3215143bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3214348bi' class='paragraph'>
+							gṛhītvā gandhakuṭidvāre prajñapayitavyaṃ pādānte vā | sarvaṃ rikṣacarma cākṣuṣyaṃ svasti |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3213950bi' class='paragraph'>
+							blaṅs nas dri gtsaṅ (6) khaṅ gi sgo’am | rkaṅ pa’i ’og tu gdiṅ bar bya ste | dom lpags thams cad ni mig la phan no ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3214746bi' class='paragraph'>
+							受已。於佛堂(10)門扇下。安坐上。或於脚邊。能令明眼。并療痔 (11)疾。&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3215144bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3214349bi' class='paragraph'>
+							bhikṣor upānahāś chinnāḥ | sa carmakārasakāśaṃ gacchati | yāvad dīrghakālaṃ gatvā svabuddher vārayiṣyatīti | so ’nyatamena bhikṣuṇā dṛṣṭaḥ | yāvad asti mama kauśalaṃ yadi bhagavān anujānīyād granthayeyam* |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3213951bi' class='paragraph'>
+							dge sloṅ gźan źig mchil lham ral nas de lham mkhan gyi druṅ du soṅ ste son nas smras pa | bźin bzaṅs bdag gi mchi la lham ral ba rgyus te bdag la byin (7) cig lham mkhan gyis bsams pa | śākya ’i sras kyi dge sbyoṅ rnams ni rṅan pa med par ’tshol gyis yun riṅ du bsgyaṅs pa daṅ | raṅ gi blo slar ldog par ’gyur ro sñam nas | ’phags pa bdag brel gyis saṅ sbyon cig | dge sloṅ de yaṅ daṅ yaṅ du (277b1) lham mkhan de’i druṅ du soṅ yaṅ des bsgyaṅs pa daṅ | de mdza’ bśes dge sloṅ rnams kyis mthoṅ nas de la smras pa | tshe daṅ ldan pa ci de na khyed kyi zas sbyor ba’i khyim yod dam | ’on te gñen gyi khyim yod | des smras pa | de na bdag gi zas sbyor ba’i khyim yaṅ med | (2) gñen gyi khyim yaṅ med mod kyi bdag gi mchil lham ral nas bdag gis de la rgyus te byin cig ces smras na des bsgyṅsso ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3214747bi' class='paragraph'>
+							時有一苾芻。皮屣底穿。將詣皮作家。令其(12)科理。經久不還。遂乃從索。有異苾芻報曰。汝(13)何不自縫。答言。我雖善解。然世尊未許。時諸(14)苾芻。以縁白佛。佛言。若有解者。應於屏處。自(15)縫皮鞋。既蒙開許。即往彼苾芻處。報言。具(16)壽。世尊已許自縫綴。報曰。須得錐刀。及皮條(17)等。時諸苾芻以縁白佛。佛言。聽諸苾芻蓄其(18)錐刀。皮條及線。並皆無犯&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3215145bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3214350bi' class='paragraph'>
+							etat prakaraṇaṃ bhikṣavo bhagavata ārocayanti |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3213952bi' class='paragraph'>
+							des smras pa | lham mkhan la bden par smra ba dkon par khyod kyis ma thos sam | ’on kyaṅ bdag śes kyis gal te bcom ldan ’das (3) kyis rjes su gnaṅ na bdag gis brgyus te khyod la sbyin no źes ba’i skabs de bcom ldan ’das la dge sloṅ rnams kyis gsol ba daṅ |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3214748bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3215146bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3214351bi' class='paragraph'>
+							bhagavān āha | yasya kauśalaṃ vidyate tena pratigupte pradeśe sthitvā granthayitavyam* |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3213953bi' class='paragraph'>
+							bcom ldan ’das kyis bka’ stsal pa | dge sloṅ gaṅ źig śes pa yod na des gaṅ du gźan gyis mthoṅ na mi dad par mi ’gyur ba dben (4) pa’i phyogs su ’dug ste brgyu bar bya’o || de de’i druṅ du soṅ ste smras pa | bcom ldan ’das kyis rjes su gnaṅ gis rgyus śig |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3214749bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3215147bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3214352bi' class='paragraph'>
+							sa kathayati | bhagavatānujñātaḥ | granthaye |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3213954bi' class='paragraph'>
+							des smras pa | ci ’di de bźin du brgyur ruṅ sñam mam |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3214750bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3215148bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3214353bi' class='paragraph'>
+							tatrārayā śastrakeṇa baddhikayā ca prayojanam* |<br />etat prakaraṇaṃ bhikṣavo bhagavata ārocayanti |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3213955bi' class='paragraph'>
+							de la re źig smyuṅ bu daṅ | dra gri daṅ | ’breṅ bu yaṅ dgos so źes pa’i skabs de (5) bcom ldan ’das la dge sloṅ rnams kyis gsol pa daṅ |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3214751bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3215149bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3214354bi' class='paragraph'>
+							bhagavān āha | tasmād anujānāmi bhikṣuṇā ārā śastrakaṃ baddhikā ca dhārayitavyāḥ |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3213956bi' class='paragraph'>
+							bcom ldan ’das kyis bka’ stsal ba | dge sloṅ gaṅ źig śes pa yod na des smyuṅ bu daṅ | ’breṅ bu ni bcaṅ bar bya’o || dra gri ni bcaṅ bar mi bya’o ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3214752bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3215150bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3214355bi' class='paragraph'>
+							carmavastu samāptam* |&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "3214324";
+							kilderef = "Carma-v GBM IV p.  208, 91r - GBM IV p. 210, 91v";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3213957bi' class='paragraph'>
+							ko lpags kyi gźi rdzogs s+ho || ||&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "3213926";
+							kilderef = "Carma-v Kj D ’dul ba ka  276a4 - Kj D ’dul ba ka 277b5";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3214753bi' class='paragraph'>
+							(19)根本説一切有部毘奈耶皮革事卷下&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "3214722";
+							kilderef = "Carma-v Chi T 1447, 義淨 Yijing  1057a7 - Chi T 1447, 義淨 Yijing b19";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3215151bi' class='paragraph'>
+							.&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "3215120";
+							kilderef = "Carma-v Comments  - Comments ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'></div><div class='textvar' style='width:24%;'></div><div class='textvar' style='width:24%;'></div><div class='textvar' style='width:24%;'></div></div><div class='clear'></div><div class="fontboks"><a onClick=onOffdiv('permlink') name="permlink" href="#permlink">Permanent link</a></div><div class='clear'></div><div class='perm_felt' id='permlink'>http://www2.hf.uio.no/common/apps/permlink/permlink.php?app=polyglotta&amp;context=ctext&amp;uid=2229e610-27f2-11e4-856a-001cc4ddf0f4</div></div></div><!-- infofelt --></div><!-- divControl --><div class="clear"></div>
+<div style="clear:both"></div><div class="signatur"><div class="signatur_left">
+		<a href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation">Go to Wiki Documentation</a></br>Enhet: <a HREF=http://www.hf.uio.no>Det humanistiske fakultet</a> &nbsp; Utviklet av: <a href="http://www.hf.uio.no/tjenester/it">IT-seksjonen ved HF</a></div><!--signatur_left -->
+		<div class="signatur_right"><a href="/polyglotta/admin/index.php">Login</a></div>
+		<div style="clear:both"></div></div>
+</body></html><SCRIPT LANGUAGE="JAVASCRIPT">
+	
+	$("#tr_IA").click(function(){
+	    if ($("#toggle_container_IA").is(':hidden'))
+	    	$("#toggle_container_IA").show();
+	    else{
+	        $("#toggle_container_IA").hide();
+	    }
+	    return false;
+		});
+
+	$("#tr_lang").click(function(){
+	    if ($("#toggle_container_lan").is(':hidden'))
+	    	$("#toggle_container_lan").show();
+	    else{
+	        $("#toggle_container_lan").hide();
+	    }
+	    return false;
+	});
+
+	$("#tr_img").click(function(){
+	    if ($("#toggle_container_img").is(':hidden'))
+	    	$("#toggle_container_img").show();
+	    else{
+	        $("#toggle_container_img").hide();
+	    }
+	    return false;
+	});
+
+	$("#diac2button").click(function(){
+	   if ($("#ex3a").is(':hidden')){
+		   $("#ex3a").show();
+	       $("#diac2button").html("Hide&#32Diacritica-help");
+	   }else{
+	       $("#ex3a").hide();
+	       $("#diac2button").html("Diacritica-help");
+	   }
+	   return false;
+	});
+
+	$("#diacbutton").click(function(){
+	   if ($("#diacritical_sign").is(':hidden')){
+		   	$("#diacritical_sign").show();
+	      	$("#diacbutton").html("Hide&#32diacritica");
+	   }else{
+	        $("#diacritical_sign").hide();
+	        $("#diacbutton").html("Diacritica");
+	   }
+	   return false;
+    });
+
+	$('#toggle_container_IA').click(function(e) {
+	   e.stopPropagation();
+	});
+
+	$('#toggle_container_lan').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#toggle_container_img').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#ex3a').click(function(e) {
+	    e.stopPropagation();
+	});
+
+	$('#diacritical_sign').click(function(e) {
+        e.stopPropagation();
+    });
+
+	//Kode for å sette inn diakritiske tegn
+	$('#diacritical > tbody > tr > td').click(function() {
+	  	//alert('red');
+		$("#sokeboks").val($("#sokeboks").val() + $(this).text());
+	});
+
+	$('.diac2button').text(($('.diacbutton').text() == 'Diacritica-help') ? 'Hide Diacritica-help' : 'Diacritica-help');
+	
+	//Lukker alle åpnede pop'uper ved klikk på siden
+	$(document).click(function() {
+		$('#toggle_container_IA').hide();
+	    
+        $('#toggle_container_lan').hide();
+    
+        $('#toggle_container_img').hide();
+   
+   		$('#diacritical_sign').hide();
+   		$("#diacbutton").html("Diacritica");
+   
+       	$('#ex3a').hide();
+       	$("#diac2button").html("Diacritica-help");
+   });
+	</SCRIPT>
